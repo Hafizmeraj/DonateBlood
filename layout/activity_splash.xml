@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".SplashActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/textgradient"
+        android:src="@drawable/shshh"
+        app:layout_constraintBottom_toTopOf="@+id/blood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textgradient"
+        android:gravity="center"
+        android:text="BD APP"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/blood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.607" />
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/blood"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/textgradient"
+
+        android:foregroundGravity="center"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/ani" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="283dp"
+        android:layout_height="44dp"
+        android:background="@drawable/textgradient"
+        android:gravity="center"
+        android:text="give blood save life"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blood"
+        app:layout_constraintVertical_bias="0.702" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
